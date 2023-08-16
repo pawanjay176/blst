@@ -21,7 +21,9 @@ include = [
     "/blst/bindings/blst_aux.h",
     "/blst/bindings/blst.hpp",
 ]
-links = "blst"
+
+# XXX: Note that we don't set a `links` attribute for Cargo, because we want to use this library
+# in multiple places within the same project
 
 [features]
 # By default, compile with ADX extension if the host supports it.
